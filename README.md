@@ -111,14 +111,11 @@ npm run dev
 ```
 
 ---
+## Backend
 
-## backend link 
-https://github.com/lazyanusha/plagiarismbackend
+The backend for this project is maintained in a private repository. It was developed using Node.js, PostgreSQL, and Python for plagiarism analysis.
 
-## 🔗 Backend
-
-This frontend communicates with a backend API developed using Node.js and PostgreSQL and integrates a Python-based plagiarism detection module.
-
+The frontend communicates with the backend through REST APIs to perform authentication, document processing, and plagiarism detection.
 ---
 
 ## 💡 Project Highlights
