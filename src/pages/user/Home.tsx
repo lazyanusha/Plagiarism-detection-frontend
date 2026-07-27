@@ -23,7 +23,7 @@ const Home = () => {
 	const [animatedPercentage, setAnimatedPercentage] = useState(0);
 	const [loading, setLoading] = useState(false);
 	const [elapsedTime, setElapsedTime] = useState<number>(0);
-	const loadingTimerRef = useRef<NodeJS.Timeout | null>(null);
+	const loadingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 	const loadingStartTimeRef = useRef<number>(0);
 	const navigate = useNavigate();
 	const resultRef = useRef<HTMLDivElement>(null);

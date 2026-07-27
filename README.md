@@ -1,54 +1,145 @@
-# React + TypeScript + Vite
+# Plagiarism Detection Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive frontend for a **Plagiarism Detection System** that allows users to upload documents, analyze text similarity, and view plagiarism results through an intuitive interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Authentication (Login & Registration)
+- Responsive and user-friendly interface
+- Document and text submission
+- View plagiarism analysis results
+- User profile and settings
+- Password reset functionality
+- Resource management
+- Reports dashboard
+- Payment UI integration
+- Protected routes for authenticated users
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+- React
+- JavaScript
+- CSS
+- HTML
+- React Router
+- Axios
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Backend (Integrated)
+- Node.js
+- Express/Fastify
+- PostgreSQL
+
+### Analysis Engine
+- Python
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+
+![Homepage](./screenshots/homepage.png)
+
+---
+
+### 🔐 Login Page
+
+![Login Page](./screenshots/loginpage.png)
+
+---
+
+### 📝 Signup Page
+
+![Signup Page](./screenshots/signuppage.png)
+
+---
+
+### 📂 Document Upload
+
+![Upload Page](./screenshots/howitworkspage.png)
+
+---
+
+### ⏳ Processing
+
+![Processing](./screenshots/resultinprogress.png)
+
+---
+
+### 📊 Plagiarism Result
+
+![Result](./screenshots/result.png)
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── api/
+├── api_helper/
+├── auth/
+├── components/
+├── pages/
+├── utils/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Clone the repository
+
+```bash
+git clone https://github.com/lazyanusha/Plagiarism-detection-frontend.git
 ```
+
+Move into the project
+
+```bash
+cd Plagiarism-detection-frontend
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## backend link 
+https://github.com/lazyanusha/plagiarismbackend
+
+## 🔗 Backend
+
+This frontend communicates with a backend API developed using Node.js and PostgreSQL and integrates a Python-based plagiarism detection module.
+
+---
+
+## 💡 Project Highlights
+
+- Built with reusable React components
+- Responsive design for desktop and mobile
+- REST API integration
+- Authentication and protected routes
+- Clean and maintainable code structure
+- Real-world academic plagiarism detection workflow
+
+---
+
+## 👩‍💻 Author
+
+**Anusha Shrestha**
+
+GitHub: https://github.com/lazyanusha
+
+---
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
